@@ -1,19 +1,22 @@
 
+table {
+    margin: auto;
+    box-sizing: border-box;
+}
 
+
+tr {
+    background-color:rgb(228, 178, 213) ;
+}
 
 .container{
-    background-color: yellow;
     width: 600px;
     height: 700px;
     margin: auto;
 }
-table{
-    margin: auto;
-    background-color: pink;
-}
+
 button {
     border: none;
-    background-color: yellow;
 }
 
 input {
@@ -27,7 +30,6 @@ input {
     margin-left: 190px;
 }
 .board-container {
-    /* background-color: blue; */
     width: 600px;
     height: 700px;
     border: 2px black;
@@ -37,21 +39,28 @@ input {
         height: 80px;
         margin-left: 250px;
 }
-
+.cell:hover{
+    background-color: #DDD;
+    box-shadow: none;
+}
 .cell {
     width: 40px;
     height: 40px;
     text-align: center;
     font-size: 1.5em;
-    background-color: violet;
-    visibility: hidden;
+    border: 1px solid rgb(204, 204, 204);
+    cursor: pointer;
+
+    text-align: center;
+    box-shadow: inset 5px 5px 10px rgb(228, 178, 213), inset -3px -3px 5px rgb(150, 141, 141);
 }
 
 .show{
-    visibility: visible;
+    cursor: default;
+    box-shadow: none;
+    background-color: #DDD;
 }
 .game-status img{
     width:inherit;
     height:inherit ;
-    /* background-color: blue ; */
 }

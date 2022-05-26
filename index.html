@@ -10,22 +10,23 @@
 <body onload="init()">
     <div class="container">
         <div>
-            <h2>Time: <span class="time">00:00</span></h2>
-            <h2>Mines Left: <span class="mines">0</span></h2>
+            <h2>Time: <span class="timer">00.000</span></h2>
+            <h2>Life: <span class="life">3</span></h2>
+            <h2>Mines Left: <span class="mines-left">0</span></h2>
             <button class="level">Levels:
                 <input type="radio" name="level" value="eazy" checked="checked">Eazy
                 <input type="radio" name="level" value="hard">Hard
                 <input type="radio" name="level" value="ext">Ext
             </button>
             <br>
-            <button class="game-status" onclick="startGame()">
+            <button class="game-status" onclick="startNewGame()">
                 <img src="img/start-emoji.png">
             </button>
 
         </div>
 
         <div class="board-container">
-        </div>
+        </div> 
     </div>
     <script src="js/game.js"></script>
 </body>
