@@ -8,26 +8,49 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body onload="init()">
-    <div class="container">
-        <div>
-            <h2>Time: <span class="timer">00.000</span></h2>
+    <header>
+        <h1>MineSweeper</h1>
+    </header>
+    <section class="container">
+        <div class="extra-info">
             <h2>Life: <span class="life">3</span></h2>
             <h2>Mines Left: <span class="mines-left">0</span></h2>
-            <button class="level">Levels:
-                <input type="radio" name="level" value="eazy" checked="checked">Eazy
-                <input type="radio" name="level" value="hard">Hard
-                <input type="radio" name="level" value="ext">Ext
-            </button>
             <br>
-            <button class="game-status" onclick="startNewGame()">
-                <img src="img/start-emoji.png">
-            </button>
-
         </div>
 
+<div class="board-main">
+        <header class="boad-header">
+            <div class="board-level-control">
+                <button class="level">Levels:
+                    <input type="radio" name="level" value="eazy" checked="checked">Eazy
+                    <input type="radio" name="level" value="hard">Hard
+                    <input type="radio" name="level" value="ext">Ext
+                </button>
+            </div>
+            <button class="board-face" alt="Face" onclick="startNewGame()">
+                <img src="img/start-emoji.png">
+            </button>
+            <div class="game-info">
+                <div class="board-dynamic-info">
+                    <img class="board-dynamic-info-img" src="img/flag-image.png">
+                    <span class="flags-text">2</span>
+                </div>
+                <div class="board-dynamic-info">
+                    <img class="board-dynamic-info-img" src="img/stopwatch.png">
+                    <span class="timer-text">0000</span>
+                </div>
+            </div>
+        </header>
+        
         <div class="board-container">
-        </div> 
-    </div>
+        </div>
+        </section>
+</div>
+
+
+
+
+    
     <script src="js/game.js"></script>
 </body>
 </html>
